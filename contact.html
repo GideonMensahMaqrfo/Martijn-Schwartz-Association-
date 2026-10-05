@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-title-en="Contact | Martijn Schwartz &amp; Associates" data-title-nl="Contact | Martijn Schwartz &amp; Associates">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Martijn Schwartz &amp; Associates</title>
+  <meta name="description" content="Request a free callback.">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>try{var th=localStorage.getItem("msa-theme");document.documentElement.setAttribute("data-theme",th==="light"?"light":"dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-nl="Naar de inhoud">Skip to content</a>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span class="tb-clock">Tampa <span class="tb-time" data-tz="America/New_York"></span></span>
+    <span class="tb-clock">Amsterdam <span class="tb-time" data-tz="Europe/Amsterdam"></span></span>
+    <span class="tb-clock">Sydney <span class="tb-time" data-tz="Australia/Sydney"></span></span>
+    <a href="mailto:Info@wetheavelsadocate.com" class="tb-mail">Info@wetheavelsadocate.com</a>
+    <button type="button" class="theme-toggle" aria-pressed="false" data-nl-aria="Lichte of donkere weergave" aria-label="Light or dark theme">
+      <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      <span class="theme-label">Light</span>
+    </button>
+    <div class="lang-switch" role="group" aria-label="Language / Taal">
+      <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+      <button type="button" data-lang="nl" aria-pressed="false" lang="nl">NL</button>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Martijn Schwartz &amp; Associates, home">
+      <img src="logo.png" alt="Martijn Schwartz &amp; Associates" width="900" height="346">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" data-nl="Menu">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html" data-nl="Home">Home</a><a href="about.html" data-nl="Over ons">About us</a><a href="practice-areas.html" data-nl="Rechtsgebieden">Practice areas</a><a href="offices.html" data-nl="Kantoren">Offices</a><a href="faq.html" data-nl="Veelgestelde vragen">FAQ</a>
+      <a href="contact.html" class="nav-cta" aria-current="page" data-nl="Afspraak maken">Book a consultation</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html" data-nl="Home">Home</a><span aria-hidden="true">/</span><span aria-current="page" data-nl="Contact">Contact</span></nav>
+    <h1 data-nl="Gratis terugbelverzoek">Request a free callback</h1>
+    <p class="hero-lead" data-nl="Vul het formulier in en wij nemen binnen één werkdag contact met u op.">Fill in the form and we'll contact you within one business day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <form class="booking-form" id="booking-form" novalidate>
+      <!-- Send opens the visitor's email app addressed to SEND_TO (see script.js). -->
+      <fieldset>
+        <legend data-nl="Uw gegevens">Your details</legend>
+        <div class="field-row">
+          <div class="field"><label for="name"><span data-nl="Volledige naam">Full name</span></label><input id="name" name="name" type="text" autocomplete="name" required><p class="err" id="name-err"></p></div>
+          <div class="field"><label for="email"><span data-nl="E-mailadres">Email address</span></label><input id="email" name="email" type="email" autocomplete="email" required><p class="err" id="email-err"></p></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="phone"><span data-nl="Telefoonnummer">Phone number</span> <span class="opt" data-nl="(optioneel)">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"><p class="err" id="phone-err"></p></div>
+          <div class="field"><label for="country"><span data-nl="Woonland">Country of residence</span></label><input id="country" name="country" type="text" autocomplete="country-name" required><p class="err" id="country-err"></p></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend data-nl="Uw zaak">Your matter</legend>
+        <div class="field-row">
+          <div class="field"><label for="area"><span data-nl="Rechtsgebied">Practice area</span></label><select id="area" name="practice_area" required><option value="" data-nl="Maak een keuze">Choose one</option><option value="real-estate" data-nl="Vastgoedrecht">Real estate law</option><option value="corporate-business" data-nl="Ondernemingsrecht">Corporate and business law</option><option value="startup-counseling" data-nl="Advies voor startups">Startup company counselling</option><option value="mergers-acquisitions" data-nl="Fusies en overnames">Mergers and acquisitions</option><option value="open-government" data-nl="Openbaarheid van bestuur">Open government</option><option value="business-formation" data-nl="Oprichting van ondernemingen">Business formation</option><option value="other" data-nl="Iets anders">Something else</option></select><p class="err" id="area-err"></p></div>
+          <div class="field"><label for="office"><span data-nl="Kantoor">Office</span></label><select id="office" name="office" required><option value="" data-nl="Maak een keuze">Choose one</option><option value="tampa" data-nl="Tampa, Verenigde Staten">Tampa, United States</option><option value="amsterdam" data-nl="Amsterdam, Nederland">Amsterdam, Netherlands</option><option value="utrecht" data-nl="Utrecht, Nederland">Utrecht, Netherlands</option><option value="sydney" data-nl="Sydney, Australië">Sydney, Australia</option></select><p class="err" id="office-err"></p></div>
+        </div>
+        <div class="field"><label for="message"><span data-nl="Omschrijf uw zaak">Describe your matter</span></label><textarea id="message" name="message" rows="6" maxlength="2000" required></textarea><p class="counter"><span id="msg-count">0</span> / 2000</p><p class="err" id="message-err"></p></div>
+      </fieldset>
+      <fieldset>
+        <legend data-nl="Gewenst moment van terugbellen">Preferred callback time</legend>
+        <div class="field-row three">
+          <div class="field"><label for="method"><span data-nl="Contact via">Contact by</span></label><select id="method" name="contact_by"><option value="phone" data-nl="Telefoon">Phone call</option><option value="video" data-nl="Videogesprek">Video call</option><option value="office" data-nl="Afspraak op kantoor">Meeting at the office</option></select><p class="err" id="method-err"></p></div>
+          <div class="field"><label for="date"><span data-nl="Datum">Date</span></label><input id="date" name="preferred_date" type="date" required><p class="err" id="date-err"></p></div>
+          <div class="field"><label for="time"><span data-nl="Tijd">Time</span></label><select id="time" name="preferred_time" required></select><p class="err" id="time-err"></p></div>
+        </div>
+        <p class="hint" id="time-hint"></p>
+      </fieldset>
+      <div class="field check"><input id="consent" name="consent" type="checkbox" value="yes" required><label for="consent"><span data-nl="Ik ga ermee akkoord dat mijn gegevens worden gebruikt om op dit verzoek te reageren, zoals beschreven in het">I agree that my information will be used to respond to this request, as described in the</span> <a href="privacy.html" data-nl="privacybeleid">privacy policy</a>.</label></div>
+      <p class="err" id="consent-err"></p>
+      <div class="form-foot">
+        <button type="submit" class="btn btn-gold" id="submit-btn" data-nl="Verzoek per e-mail versturen">Send request by email</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </div>
+      <p class="mail-alt" data-nl="Uw e-mailprogramma opent met uw verzoek al ingevuld, gericht aan Info@wetheavelsadocate.com. Druk daar op verzenden.">Your email app opens with your request already written, addressed to Info@wetheavelsadocate.com. Press send there.</p>
+      <div class="mail-panel" id="mail-panel" hidden>
+        <h3 data-nl="Uw e-mail staat klaar">Your email is ready</h3>
+        <p data-nl="Uw e-mailprogramma zou nu open moeten staan met uw verzoek. Druk daar op verzenden. Opende het niet? Gebruik dan de knop hieronder, of kopieer de tekst naar een nieuwe e-mail.">Your email app should now be open with your request. Press send there. If it didn't open, use the button below, or copy the text into a new email.</p>
+        <div class="mail-panel-actions">
+          <a class="btn btn-gold btn-small" id="mail-panel-link" href="#" data-nl="E-mailprogramma openen">Open email app</a>
+          <button type="button" class="btn btn-outline btn-small" id="mail-panel-copy">Copy text</button>
+        </div>
+        <textarea id="mail-panel-text" rows="9" readonly aria-label="Email text"></textarea>
+      </div>
+    </form>
+    <aside class="contact-side">
+      <h2 data-nl="Andere manieren om ons te bereiken">Other ways to reach us</h2>
+      <h3 data-nl="E-mail">Email</h3>
+      <p><a href="mailto:Info@wetheavelsadocate.com">Info@wetheavelsadocate.com</a><br><a href="mailto:admin@wetheavelsadvocate.com">admin@wetheavelsadvocate.com</a></p>
+      <h3 data-nl="Telefoon">Phone</h3>
+      <ul class="phone-list"><li><strong>Tampa</strong><br><a href="tel:+17693627861">+1 769 362 7861</a><br><a href="tel:+12027538686">+1 202 753 8686</a></li><li><strong>Amsterdam</strong><br><a href="tel:+31685781289">+31 6857 81289</a></li><li><strong>Utrecht</strong><br><span class="muted" data-nl="Zie Amsterdam">See Amsterdam</span></li><li><strong>Sydney</strong><br><a href="tel:+61489925179">+61 4899 25179</a></li></ul>
+      <a href="offices.html" class="text-link" data-nl="Adressen en kaarten">Office addresses and maps</a>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="index.html"><img src="logo.png" alt="Martijn Schwartz &amp; Associates" width="900" height="346" loading="lazy"></a>
+      <p data-nl="Juridisch advies voor ondernemers vanuit kantoren in Tampa, Amsterdam, Utrecht en Sydney.">Business law counsel from offices in Tampa, Amsterdam, Utrecht and Sydney.</p>
+      <p><a href="mailto:Info@wetheavelsadocate.com">Info@wetheavelsadocate.com</a><br><a href="mailto:admin@wetheavelsadvocate.com">admin@wetheavelsadvocate.com</a></p>
+    </div>
+    <div>
+      <h2 class="footer-h" data-nl="Rechtsgebieden">Practice areas</h2>
+      <ul><li><a href="real-estate.html" data-nl="Vastgoedrecht">Real estate law</a></li><li><a href="corporate-business.html" data-nl="Ondernemingsrecht">Corporate and business law</a></li><li><a href="startup-counseling.html" data-nl="Advies voor startups">Startup company counselling</a></li><li><a href="mergers-acquisitions.html" data-nl="Fusies en overnames">Mergers and acquisitions</a></li><li><a href="open-government.html" data-nl="Openbaarheid van bestuur">Open government</a></li><li><a href="business-formation.html" data-nl="Oprichting van ondernemingen">Business formation</a></li></ul>
+    </div>
+    <div>
+      <h2 class="footer-h" data-nl="Kantoren">Offices</h2>
+      <ul><li><a href="offices.html#tampa">Tampa</a></li><li><a href="offices.html#amsterdam">Amsterdam</a></li><li><a href="offices.html#utrecht">Utrecht</a></li><li><a href="offices.html#sydney">Sydney</a></li></ul>
+    </div>
+    <div>
+      <h2 class="footer-h" data-nl="Kantoor">Firm</h2>
+      <ul>
+        <li><a href="about.html" data-nl="Over ons">About us</a></li>
+        <li><a href="faq.html" data-nl="Veelgestelde vragen">FAQ</a></li>
+        <li><a href="contact.html" data-nl="Contact">Contact</a></li>
+        <li><a href="privacy.html" data-nl="Privacybeleid">Privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; 2019 Martijn Schwartz &amp; Associates. <a href="https://www.wetHeavelsAdvocate.com">www.wetHeavelsAdvocate.com</a></p>
+    <p data-nl="De informatie op deze website is algemeen van aard en geen juridisch advies. Contact met ons opnemen schept nog geen cliëntrelatie.">The information on this website is general and is not legal advice. Contacting us does not create a client relationship.</p>
+  </div>
+</footer>
+<button class="to-top" aria-label="Back to top" data-nl-aria="Terug naar boven" hidden>&uarr;</button>
+<div class="cookie" role="region" aria-label="Cookie notice" hidden>
+  <p><span data-nl="Deze site bewaart alleen uw taalkeuze en voorkeuren in uw browser.">This site only stores your language choice and preferences in your browser.</span> <a href="privacy.html" data-nl="Privacybeleid">Privacy policy</a></p>
+  <button class="btn btn-gold btn-small" data-cookie-ok>OK</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
